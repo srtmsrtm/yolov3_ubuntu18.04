@@ -6,25 +6,25 @@
 
 ## Installation
 
-1. Dockerfile
+### Dockerfile
  
  (w/o GPU) $ docker build --file Dockerfile --tag yolov3_ubuntu18.04:0.1 .
 
  (w/  GPU) $ nvidia-docker build --file Dockerfile --tag yolov3_ubuntu18.04:0.1 .
 
-2. Start container
+### Start container
 
  (w/o GPU) $ docker run -it yolov3_ubuntu18.04:0.1
  
  (w/  GPU) $ nvidia-docker run -it yolov3_ubuntu18.04:0.1
 
-3. Build darknet
+### Build darknet
 
  $ cd /root/src/darknet
  
  $ make
 
-4. Run
+### Run
 
  $ cd /root/src/darknet
  
